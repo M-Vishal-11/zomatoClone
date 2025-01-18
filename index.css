@@ -1,0 +1,64 @@
+body{
+    display: grid;
+    grid-template-areas: 
+    'header header header header'
+    'main main main main'
+    'main main main main'
+    'footer footer footer footer';
+    background-color: hsl(120, 100%, 95%);                        
+}
+header{
+    grid-area: header;
+    background-color: 	hsl(100, 100%, 80%);
+    margin: none;
+}
+#navigation-bar{
+    background-color: hsl(100, 100%, 60%);
+    padding: 1rem;
+    font-size: medium;
+    text-align: center;
+}
+#navigation-bar a{
+    padding: 2rem;
+    text-decoration: none;
+    color: hsl(237, 100%, 50%)
+}
+#navigation-bar a:hover{
+    color: hsl(237, 100%, 10%);
+}
+#cmp-name{
+    color:hsl(25, 100%, 50%);
+    text-align: center;
+    padding: 1rem;
+    font-size: 4rem;
+}
+main{
+    grid-area: main;
+    margin: 2rem;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+}
+article{
+    background-color: hsl(150, 100%, 91%);
+    padding: 1rem;
+    margin: 0.5rem;
+    height: 19rem;
+}
+article img{
+    width: 15rem;
+    height: 14rem;
+}
+article span{
+    /* background-color: hsl(150, 100%, 80%); */
+    margin-left: 5px;
+    padding: 3px;
+}
+footer{
+    grid-area: footer;
+    background-color:hsl(120, 100%, 10%);
+    color: hsl(120, 100%, 80%);
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+}

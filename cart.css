@@ -1,0 +1,59 @@
+body{
+    display: grid;
+    grid-template-areas: 
+    'header header header header'
+    'main main main main'
+    'table table table table'
+    'footer footer footer footer';
+    background-color: hsl(120, 100%, 95%);                        
+}
+header{
+    grid-area: header;
+    background-color: 	hsl(100, 100%, 80%);
+    margin: none;
+}
+#navigation-bar{
+    background-color: hsl(100, 100%, 60%);
+    padding: 1rem;
+    font-size: medium;
+    text-align: center;
+}
+#navigation-bar a{
+    padding: 2rem;
+    text-decoration: none;
+    color: hsl(237, 100%, 50%)
+}
+#navigation-bar a:hover{
+    color: hsl(237, 100%, 10%);
+}
+#cmp-name{
+    color:hsl(25, 100%, 50%);
+    text-align: center;
+    padding: 1rem;
+    font-size: 4rem;
+}
+#title{
+    padding-left: 35rem;
+    margin: 2rem;
+    text-align: center;
+    font-size: 3rem;
+}
+table{
+    grid-area: table;
+    border-collapse:collapse;
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+table th{
+    background-color: hsl(25, 100%, 70%);
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+table td{
+    padding: 0.5rem;
+    text-align: center;
+}
+#total{
+    background-color: hsl(60, 100%, 50%);
+}
